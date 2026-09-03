@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+            <link rel="stylesheet" type="text/css" href="css/estilos.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+            <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+            <title>   Auka | Arte y territorio</title>
+        </head>
+        <body>
+            <section class="bienvenida-actividad">
+                <div class="bienvenida-contenido col-12 col-md-10 col-lg-8">
+                    <img
+                src="imagenes/VectorAUKAmoradoau.svg"
+                alt="Auka Hábitat violeta"
+                class="logo-bienvenida"
+            >
+                    <h1>
+                        Auka te agradece
+                    </h1>
+                    <p class="bienvenida-texto">
+                        Gracias por querer ser parte de este encuentro entre el arte, la naturaleza y el territorio.
+                    </p>
+                    <div class="video-bienvenida">
+                        <video
+                    controls
+                    playsinline
+                    preload="metadata"
+                >
+                            <source
+                        src="videos/video 2.mp4"
+                        type="video/mp4"
+                    >
+                            Tu navegador no puede reproducir este video.
+                        </video>
+                    </div>
+                </div>
+            </section>
+            <section class="actividad-experiencia">
+                <div class="experiencia-contenido col-12">
+                    <p class="experiencia-etiqueta">
+                        UNA EXPERIENCIA PARA TI
+                    </p>
+                    <h2>
+                        Escucha, observa,
+                        <br>
+                        crea y descubre
+                    </h2>
+                    <p class="experiencia-intro">
+                        Un sonido del territorio será tu punto de partida. Escúchalo con atención, imagina aquello que despierta en ti y conviértelo en una creación.
+                    </p>
+                    <div class="sonido-experiencia col-12 col-md-10 col-lg-8">
+                        <h3>
+                            ¿Qué te inspira este sonido?
+                        </h3>
+                        <p>
+                            Escucha con atención y deja que tu imaginación descubra el territorio.
+                        </p>
+                        <button
+                    type="button"
+                    id="boton-sonido"
+                >
+                            ESCUCHAR UN SONIDO →
+                        </button>
+                        <div id="reproductor-sonido">
+                        </div>
+                        <p id="mensaje-sonido">
+                        </p>
+                    </div>
+                    <div class="pasos-actividad row justify-content-center g-4">
+                        <div class="paso-actividad col-12 col-sm-6 col-lg-3">
+                            <span>
+                                01
+                            </span>
+                            <h4>
+                                Escucha
+                            </h4>
+                            <p>
+                                Deja que el sonido sea tu primer encuentro.
+                            </p>
+                        </div>
+                        <div class="paso-actividad col-12 col-sm-6 col-lg-3">
+                            <span>
+                                02
+                            </span>
+                            <h4>
+                                Observa
+                            </h4>
+                            <p>
+                                Imagina el animal y el territorio que habita.
+                            </p>
+                        </div>
+                        <div class="paso-actividad col-12 col-sm-6 col-lg-3">
+                            <span>
+                                03
+                            </span>
+                            <h4>
+                                Crea
+                            </h4>
+                            <p>
+                                Lleva aquello que imaginaste a una obra.
+                            </p>
+                        </div>
+                        <div class="paso-actividad col-12 col-sm-6 col-lg-3">
+                            <span>
+                                04
+                            </span>
+                            <h4>
+                                Descubre
+                            </h4>
+                            <p>
+                                Comparte tu interpretación con Auka.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="formulario-creacion col-12 col-lg-10">
+                        <p class="formulario-etiqueta">
+                            AHORA ES TU TURNO
+                        </p>
+                        <h3>
+                            Comparte tu creación con Auka
+                        </h3>
+                        <p class="formulario-intro">
+                            Después de escuchar e imaginar, lleva aquello que descubriste a una obra. Cuando termines, comparte tu creación con nosotros.
+                        </p>
+                        <form action="https://formspree.io/f/xdeoeorb" method="POST" enctype="multipart/form-data">
+                            <div class="campo-formulario col-12">
+                                <label for="nombre">
+                                    Tu nombre
+                                </label>
+                                <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                placeholder="Escribe tu nombre"
+                required
+            >
+                            </div>
+                            <div class="campo-formulario col-12">
+                                <label for="correo">
+                                    Correo electrónico
+                                </label>
+                                <input
+                type="email"
+                id="correo"
+                name="correo"
+                placeholder="Escribe tu correo"
+                required
+            >
+                            </div>
+                            <div class="campo-formulario col-12">
+                                <label for="obra">
+                                    Nombre de tu obra
+                                </label>
+                                <input
+                type="text"
+                id="obra"
+                name="obra"
+                placeholder="¿Cómo se llama tu creación?"
+                required
+            >
+                            </div>
+                            <div class="campo-formulario col-12">
+                                <label for="interpretacion">
+                                    Cuéntanos qué imaginaste
+                                </label>
+                                <textarea
+                id="interpretacion"
+                name="interpretacion"
+                rows="4"
+                placeholder="Cuéntanos brevemente qué despertó este sonido en ti..."
+            >
+                                </textarea>
+                            </div>
+                            <div class="campo-formulario col-12">
+                                <label for="obra-foto">
+                                    Carga una fotografía de tu obra
+                                </label>
+                                <input
+                type="file"
+                id="obra-foto"
+                name="obra-foto"
+                accept="image/*"
+                required
+            >
+                            </div>
+                            <button
+            type="submit"
+            class="boton-enviar"
+        >
+                                ENVIAR MI CREACIÓN →
+                            </button>
+                        </form>
+                    </div>
+        </div>
+    </section>
+    <section class="cierre-auka">
+        <div class="cierre-video col-12 col-md-6">
+            <video controls playsinline preload="metadata">
+                <source src="videos/serraniavideo.mp4" type="video/mp4">
+                Tu navegador no puede reproducir este video.
+            </video>
+        </div>
+        <div class="cierre-mensaje col-12 col-md-6">
+            <p class="cierre-etiqueta">
+                GRACIAS POR CREAR CON AUKA
+            </p>
+            <h2>
+                Un encuentro que permanece
+            </h2>
+            <p>
+                Gracias por escuchar, observar, imaginar y crear. Tu obra también hace parte de este territorio.
+            </p>
+            <p class="cierre-firma">
+                Con cariño,
+                <br>
+                <strong>
+                    Auka
+                </strong>
+            </p>
+        </div>
+    </section>
+    <footer class="footer-auka">
+        <div class="footer-logo">
+            <img src="imagenes/VectorAUKAmoradoau.svg" alt="Auka">
+        </div>
+        <nav class="footer-menu">
+            <a href="index.html">
+                Inicio
+            </a>
+            <a href="index.html#sobre-auka">
+                Sobre Auka
+            </a>
+            <a href="index.html#escucha-auka">
+                Escucha Auka
+            </a>
+            <a href="Arteyterritorio.html">
+                Arte y Territorio
+            </a>
+        </nav>
+        <div class="footer-redes">
+            <p>
+                SÍGUENOS
+            </p>
+            <div class="redes-iconos">
+                <a href="#" aria-label="Instagram">
+                    <i class="bi bi-instagram">
+                    </i>
+                </a>
+                <a href="#" aria-label="Facebook">
+                    <i class="bi bi-facebook">
+                    </i>
+                </a>
+                <a href="#" aria-label="YouTube">
+                    <i class="bi bi-youtube">
+                    </i>
+                </a>
+            </div>
+        </div>
+        <div class="footer-copy">
+            <p>
+                © 2027 Auka. Todos los derechos reservados.
+            </p>
+            <p>
+                Arte · Naturaleza · Territorio
+            </p>
+        </div>
+    </footer>
+</section>
+<script>
+    const sonidos = [
+    "colibri.mp3",
+    "danta.mp3",
+    "jaguar.mp3",
+    "oso.mp3",
+    "rana.mp3",
+    "tucan.mp3"
+    ];
+    const botonSonido =
+    document.getElementById("boton-sonido");
+    const reproductorSonido =
+    document.getElementById("reproductor-sonido");
+    const mensajeSonido =
+    document.getElementById("mensaje-sonido");
+    let sonidoAnterior = null;
+    botonSonido.addEventListener("click", function () {
+    let sonidoActual;
+    do {
+    const indiceAleatorio =
+    Math.floor(
+    Math.random() * sonidos.length
+    );
+    sonidoActual =
+    sonidos[indiceAleatorio];
+    } while (
+    sonidos.length > 1 &&
+    sonidoActual === sonidoAnterior
+    );
+    sonidoAnterior = sonidoActual;
+    reproductorSonido.innerHTML = `
+    <audio
+    controls
+    autoplay
+    >
+    <source
+    src="sonidos/${sonidoActual}"
+    type="audio/mpeg"
+    >
+    Tu navegador no puede reproducir
+    este audio.
+    </audio>
+    `;
+    mensajeSonido.textContent =
+    "Escucha con atención. ¿Qué te hace imaginar este sonido?";
+    });
+</script>
+</body>
+</html>
